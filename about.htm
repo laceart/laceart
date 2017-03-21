@@ -1,0 +1,51 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="zh-tw">
+<meta http-equiv="Content-Type" content="text/html; charset=big5">
+<title>新增網頁1</title>
+<script language="JavaScript">
+<!--
+function FP_swapImg() {//v1.0
+ var doc=document,args=arguments,elm,n; doc.$imgSwaps=new Array(); for(n=2; n<args.length;
+ n+=2) { elm=FP_getObjectByID(args[n]); if(elm) { doc.$imgSwaps[doc.$imgSwaps.length]=elm;
+ elm.$src=elm.src; elm.src=args[n+1]; } }
+}
+
+function FP_preloadImgs() {//v1.0
+ var d=document,a=arguments; if(!d.FP_imgs) d.FP_imgs=new Array();
+ for(var i=0; i<a.length; i++) { d.FP_imgs[i]=new Image; d.FP_imgs[i].src=a[i]; }
+}
+
+function FP_getObjectByID(id,o) {//v1.0
+ var c,el,els,f,m,n; if(!o)o=document; if(o.getElementById) el=o.getElementById(id);
+ else if(o.layers) c=o.layers; else if(o.all) el=o.all[id]; if(el) return el;
+ if(o.id==id || o.name==id) return o; if(o.childNodes) c=o.childNodes; if(c)
+ for(n=0; n<c.length; n++) { el=FP_getObjectByID(id,c[n]); if(el) return el; }
+ f=o.forms; if(f) for(n=0; n<f.length; n++) { els=f[n].elements;
+ for(m=0; m<els.length; m++){ el=FP_getObjectByID(id,els[n]); if(el) return el; } }
+ return null;
+}
+// -->
+</script>
+</head>
+
+<body onload="FP_preloadImgs(/*url*/'images/按鈕/buttonA2.jpg', /*url*/'images/按鈕/buttonA3.jpg', /*url*/'images/按鈕/buttonB2.jpg', /*url*/'images/按鈕/buttonB3.jpg', /*url*/'images/按鈕/buttonC2.jpg', /*url*/'images/按鈕/buttonC3.jpg')">
+
+<p align="center"><a href="product_main.htm">
+<img border="0" src="images/8480878_orig.jpg" width="84" height="52"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+<a href="about_sleep.htm">
+<img border="0" id="img1" src="images/按鈕/buttonA1.jpg" height="20" width="100" alt="寢飾" fp-style="fp-btn: Braided Column 1" fp-title="寢飾" onmouseover="FP_swapImg(1,0,/*id*/'img1',/*url*/'images/按鈕/buttonA2.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img1',/*url*/'images/按鈕/buttonA1.jpg')" onmousedown="FP_swapImg(1,0,/*id*/'img1',/*url*/'images/按鈕/buttonA3.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img1',/*url*/'images/按鈕/buttonA2.jpg')"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="about_bag.htm">
+<img border="0" id="img2" src="images/按鈕/buttonB1.jpg" height="20" width="100" alt="包袋" fp-style="fp-btn: Braided Column 3" fp-title="包袋" onmouseover="FP_swapImg(1,0,/*id*/'img2',/*url*/'images/按鈕/buttonB2.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img2',/*url*/'images/按鈕/buttonB1.jpg')" onmousedown="FP_swapImg(1,0,/*id*/'img2',/*url*/'images/按鈕/buttonB3.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img2',/*url*/'images/按鈕/buttonB2.jpg')"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="about_shoes.htm">
+<img border="0" id="img3" src="images/按鈕/buttonC1.jpg" height="20" width="100" alt="鞋子" fp-style="fp-btn: Braided Column 4" fp-title="鞋子" onmouseover="FP_swapImg(1,0,/*id*/'img3',/*url*/'images/按鈕/buttonC2.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img3',/*url*/'images/按鈕/buttonC1.jpg')" onmousedown="FP_swapImg(1,0,/*id*/'img3',/*url*/'images/按鈕/buttonC3.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img3',/*url*/'images/按鈕/buttonC2.jpg')"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p>
+<p align="center">
+<img border="0" src="images/about/fotex-antimitebedding_01.jpg" width="218" height="218">&nbsp;&nbsp;
+<img border="0" src="images/about/1素面手機袋.jpg" width="240" height="239">&nbsp;
+<img border="0" src="images/about/1素面白布鞋-兒童(3).jpg" width="205" height="204"></p>
+<p align="center">　</p>
+
+</body>
+
+</html>
