@@ -1,0 +1,48 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=big5">
+<title>新增網頁3</title>
+<base target="main">
+<script language="JavaScript">
+<!--
+function FP_swapImg() {//v1.0
+ var doc=document,args=arguments,elm,n; doc.$imgSwaps=new Array(); for(n=2; n<args.length;
+ n+=2) { elm=FP_getObjectByID(args[n]); if(elm) { doc.$imgSwaps[doc.$imgSwaps.length]=elm;
+ elm.$src=elm.src; elm.src=args[n+1]; } }
+}
+
+function FP_preloadImgs() {//v1.0
+ var d=document,a=arguments; if(!d.FP_imgs) d.FP_imgs=new Array();
+ for(var i=0; i<a.length; i++) { d.FP_imgs[i]=new Image; d.FP_imgs[i].src=a[i]; }
+}
+
+function FP_getObjectByID(id,o) {//v1.0
+ var c,el,els,f,m,n; if(!o)o=document; if(o.getElementById) el=o.getElementById(id);
+ else if(o.layers) c=o.layers; else if(o.all) el=o.all[id]; if(el) return el;
+ if(o.id==id || o.name==id) return o; if(o.childNodes) c=o.childNodes; if(c)
+ for(n=0; n<c.length; n++) { el=FP_getObjectByID(id,c[n]); if(el) return el; }
+ f=o.forms; if(f) for(n=0; n<f.length; n++) { els=f[n].elements;
+ for(m=0; m<els.length; m++){ el=FP_getObjectByID(id,els[n]); if(el) return el; } }
+ return null;
+}
+// -->
+</script>
+</head>
+
+<body onload="FP_preloadImgs(/*url*/'images/按鈕/button2.jpg', /*url*/'images/按鈕/button1.jpg', /*url*/'images/按鈕/button5.jpg', /*url*/'images/按鈕/button4.jpg', /*url*/'images/按鈕/button14.jpg', /*url*/'images/按鈕/button13.jpg', /*url*/'images/按鈕/button8.jpg', /*url*/'images/按鈕/button9.jpg', /*url*/'images/按鈕/button11.jpg', /*url*/'images/按鈕/button12.jpg')">
+
+<p align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<img border="0" id="img14" src="images/按鈕/button3.jpg" height="20" width="100" alt="公司介紹" onmouseover="FP_swapImg(1,0,/*id*/'img14',/*url*/'images/按鈕/button2.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img14',/*url*/'images/按鈕/button3.jpg')" onmousedown="FP_swapImg(1,0,/*id*/'img14',/*url*/'images/按鈕/button1.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img14',/*url*/'images/按鈕/button2.jpg')" fp-style="fp-btn: Glass Capsule 3" fp-title="公司介紹">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a target="main" href="product_main.htm">
+<img border="0" id="img15" src="images/按鈕/button6.jpg" height="20" width="100" alt="產品介紹" onmouseover="FP_swapImg(1,0,/*id*/'img15',/*url*/'images/按鈕/button5.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img15',/*url*/'images/按鈕/button6.jpg')" onmousedown="FP_swapImg(1,0,/*id*/'img15',/*url*/'images/按鈕/button4.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img15',/*url*/'images/按鈕/button5.jpg')" fp-style="fp-btn: Glass Capsule 1" fp-title="產品介紹"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+<a href="categories.htm">
+<img border="0" id="img19" src="images/按鈕/button7.jpg" height="20" width="100" alt="產品型錄" onmouseover="FP_swapImg(1,0,/*id*/'img19',/*url*/'images/按鈕/button8.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img19',/*url*/'images/按鈕/button7.jpg')" onmousedown="FP_swapImg(1,0,/*id*/'img19',/*url*/'images/按鈕/button9.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img19',/*url*/'images/按鈕/button8.jpg')" fp-style="fp-btn: Glass Capsule 4" fp-title="產品型錄"></a>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="about.htm">
+<img border="0" id="img20" src="images/按鈕/button10.jpg" height="20" width="100" alt="相關產品" onmouseover="FP_swapImg(1,0,/*id*/'img20',/*url*/'images/按鈕/button11.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img20',/*url*/'images/按鈕/button10.jpg')" onmousedown="FP_swapImg(1,0,/*id*/'img20',/*url*/'images/按鈕/button12.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img20',/*url*/'images/按鈕/button11.jpg')" fp-style="fp-btn: Glass Capsule 2" fp-title="相關產品"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="http://www.tovery.net/guestbook.asp?user=talk">
+<img border="0" id="img18" src="images/按鈕/button15.jpg" height="20" width="100" alt="留言板" onmouseover="FP_swapImg(1,0,/*id*/'img18',/*url*/'images/按鈕/button14.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img18',/*url*/'images/按鈕/button15.jpg')" onmousedown="FP_swapImg(1,0,/*id*/'img18',/*url*/'images/按鈕/button13.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img18',/*url*/'images/按鈕/button14.jpg')" fp-style="fp-btn: Glass Capsule 5" fp-title="留言板"></a></p>
+<p align="center">　</p>
+
+</body>
+
+</html>
